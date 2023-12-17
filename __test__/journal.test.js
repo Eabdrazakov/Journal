@@ -23,4 +23,9 @@ describe('Journal', () => {
         expect(wordEntry.numberOfWords()).toEqual(5);
     });
 
+    test('should return 0 for an empty string', () => {
+        const emptyEntry = new Journal("", "");
+        expect(emptyEntry.numberOfVowels()).toEqual(0);
+    });
+
 });
