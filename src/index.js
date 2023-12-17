@@ -1,3 +1,5 @@
+import Journal from "./journal.js";
+
 function reset() {
     const form = document.querySelector("form");
     form.reset();

@@ -1,4 +1,4 @@
-function Journal(title, description) {
+export default function Journal(title, description) {
     this.title = title;
     this.description = description;
 }
