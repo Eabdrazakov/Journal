@@ -32,4 +32,9 @@ describe('Journal', () => {
         const noVowelsEntry = new Journal("", "Th m hwy mpkl");
         expect(noVowelsEntry.numberOfVowels()).toEqual(0);
     });
+
+    test('should return the correct number of vowels for a string with vowels', () => {
+        const vowelsEntry = new Journal("", 'This is a test description with vowels');
+        expect(vowelsEntry.numberOfVowels()).toEqual(11);
+    });
 });
