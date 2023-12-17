@@ -47,4 +47,9 @@ describe('Journal', () => {
         const sentence = new Journal("", "My name is Ermek");
         expect(sentence.getTeaser()).toEqual("My name is Ermek");
     });
+
+    test('should return first sentence only', () => {
+        const sentence = new Journal("", "My name is Ermek. I am from Kyrgyzstan");
+        expect(sentence.getTeaser()).toEqual("My name is Ermek")
+    })
 });
