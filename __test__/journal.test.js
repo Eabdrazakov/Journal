@@ -28,4 +28,8 @@ describe('Journal', () => {
         expect(emptyEntry.numberOfVowels()).toEqual(0);
     });
 
+    test('should return 0 for a string with no vowels', () => {
+        const noVowelsEntry = new Journal("", "Th m hwy mpkl");
+        expect(noVowelsEntry.numberOfVowels()).toEqual(0);
+    });
 });
