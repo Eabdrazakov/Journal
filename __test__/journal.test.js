@@ -37,4 +37,14 @@ describe('Journal', () => {
         const vowelsEntry = new Journal("", 'This is a test description with vowels');
         expect(vowelsEntry.numberOfVowels()).toEqual(11);
     });
+
+    test('should return empty string if there is no sentence', () => {
+        const sentence = new Journal("", "");
+        expect(sentence.getTeaser()).toEqual("");
+    });
+
+    test('should return sentence', () => {
+        const sentence = new Journal("", "My name is Ermek");
+        expect(sentence.getTeaser()).toEqual("My name is Ermek");
+    });
 });
